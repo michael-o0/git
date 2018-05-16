@@ -1,0 +1,20 @@
+/*
+ * gnuefi.h
+ */
+
+#ifndef GNUEFI_H
+#define GNUEFI_H
+
+#include <efi/efi.h>
+#include <efi/efilib.h>
+
+#ifndef EFI_SIMPLE_TEXT_INPUT_PROTOCOL
+typedef SIMPLE_INPUT_INTERFACE EFI_SIMPLE_TEXT_INPUT_PROTOCOL;
+#endif /* !EFI_SIMPLE_TEXT_INPUT_PROTOCOL */
+
+#ifndef EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL
+typedef SIMPLE_TEXT_OUTPUT_INTERFACE EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL;
+#endif  /* !EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL */
+
+
+#endif /* !GNUEFI_H */
